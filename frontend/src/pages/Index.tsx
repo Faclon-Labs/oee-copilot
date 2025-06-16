@@ -2683,11 +2683,9 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-3">
-              <img 
-                src="/lovable-uploads/99472c44-b1d1-4c2d-afb3-5ad9ff8a3851.png" 
-                alt="Faclon Labs" 
-                className="h-8"
-              />
+              <div className="text-xl font-bold bg-gradient-to-r from-blue-500 to-indigo-500 bg-clip-text text-transparent">
+                Faclon Labs
+              </div>
             </div>
             <div className="text-center">
               <h1 className="text-xl font-bold text-gray-900">OEE AI Copilot</h1>
