@@ -1,0 +1,431 @@
+{
+  "machines": [
+    {
+      "id": "IMM-001",
+      "name": "Injection Molding Machine 1 - Haitian MA1200",
+      "type": "Injection Molding",
+      "location": "Production Floor A - Bay 1",
+      "status": "RUNNING",
+      "operator": "Priya Sharma",
+      "shift": "Day Shift (6:00 AM - 2:00 PM)",
+      "job": "Automotive Dashboard Components",
+      "currentMold": "DASH-001 (8-cavity)",
+      "material": "ABS Plastic - Grade 757K",
+      "runningDuration": "4h 23m",
+      "realtimeData": {
+        "outputRate": 288,
+        "targetRate": 320,
+        "efficiency": 90.0,
+        "quality": "2 flash defects detected",
+        "cycleTime": 45,
+        "targetCycleTime": 40,
+        "injectionPressure": 1250,
+        "moldTemperature": 65,
+        "materialTemperature": 245,
+        "cavityCount": 8,
+        "shotWeight": 125,
+        "nextMaintenance": "Due in 6 days"
+      },
+      "dailyProduction": [
+        { "hour": "06:00", "actual": 280, "target": 320, "cumulative": 280, "cycleTime": 46 },
+        { "hour": "07:00", "actual": 295, "target": 320, "cumulative": 575, "cycleTime": 44 },
+        { "hour": "08:00", "actual": 310, "target": 320, "cumulative": 885, "cycleTime": 42 },
+        { "hour": "09:00", "actual": 285, "target": 320, "cumulative": 1170, "cycleTime": 47 },
+        { "hour": "10:00", "actual": 300, "target": 320, "cumulative": 1470, "cycleTime": 43 },
+        { "hour": "11:00", "actual": 288, "target": 320, "cumulative": 1758, "cycleTime": 45 },
+        { "hour": "12:00", "actual": 275, "target": 320, "cumulative": 2033, "cycleTime": 48 },
+        { "hour": "13:00", "actual": 292, "target": 320, "cumulative": 2325, "cycleTime": 44 },
+        { "hour": "14:00", "actual": 288, "target": 320, "cumulative": 2613, "cycleTime": 45 }
+      ],
+      "oeeData": {
+        "current": {
+          "overall": 84.3,
+          "availability": 91.2,
+          "performance": 90.0,
+          "quality": 97.1,
+          "targetOEE": 85.0
+        },
+        "trend": [
+          { "date": "2024-01-15", "oee": 81.5, "availability": 88.9, "performance": 89.2, "quality": 96.8 },
+          { "date": "2024-01-16", "oee": 83.1, "availability": 90.1, "performance": 89.8, "quality": 97.2 },
+          { "date": "2024-01-17", "oee": 85.2, "availability": 92.3, "performance": 90.5, "quality": 97.5 },
+          { "date": "2024-01-18", "oee": 82.8, "availability": 89.7, "performance": 89.1, "quality": 96.9 },
+          { "date": "2024-01-19", "oee": 84.3, "availability": 91.2, "performance": 90.0, "quality": 97.1 }
+        ],
+        "shiftComparison": [
+          { "shift": "Day (6AM-2PM)", "oee": 84.3, "availability": 91.2, "performance": 90.0, "quality": 97.1 },
+          { "shift": "Evening (2PM-10PM)", "oee": 81.7, "availability": 88.5, "performance": 88.9, "quality": 96.8 },
+          { "shift": "Night (10PM-6AM)", "oee": 78.9, "availability": 85.1, "performance": 87.2, "quality": 96.2 }
+        ]
+      },
+      "downtimeData": {
+        "todayBreakdown": [
+          { "cause": "Mold Change", "duration": 35, "percentage": 45.2, "color": "#ff6b6b" },
+          { "cause": "Material Loading", "duration": 22, "percentage": 28.4, "color": "#4ecdc4" },
+          { "cause": "Quality Check", "duration": 12, "percentage": 15.5, "color": "#45b7d1" },
+          { "cause": "Purging", "duration": 8, "percentage": 10.3, "color": "#f39c12" }
+        ],
+        "weeklyTrend": [
+          { "day": "Mon", "planned": 45, "unplanned": 15, "maintenance": 8 },
+          { "day": "Tue", "planned": 38, "unplanned": 22, "maintenance": 5 },
+          { "day": "Wed", "planned": 42, "unplanned": 18, "maintenance": 12 },
+          { "day": "Thu", "planned": 40, "unplanned": 25, "maintenance": 7 },
+          { "day": "Fri", "planned": 35, "unplanned": 20, "maintenance": 10 },
+          { "day": "Sat", "planned": 28, "unplanned": 12, "maintenance": 15 },
+          { "day": "Today", "planned": 42, "unplanned": 18, "maintenance": 0 }
+        ]
+      },
+      "qualityData": {
+        "defectTypes": [
+          { "type": "Flash", "count": 18, "percentage": 35.3, "cost": 1260 },
+          { "type": "Short Shot", "count": 12, "percentage": 23.5, "cost": 1800 },
+          { "type": "Sink Marks", "count": 10, "percentage": 19.6, "cost": 800 },
+          { "type": "Warpage", "count": 8, "percentage": 15.7, "cost": 1200 },
+          { "type": "Color Variation", "count": 3, "percentage": 5.9, "cost": 180 }
+        ]
+      }
+    },
+    {
+      "id": "IMM-002",
+      "name": "Injection Molding Machine 2 - Engel Victory 200",
+      "type": "Injection Molding",
+      "location": "Production Floor A - Bay 2",
+      "status": "MAINTENANCE",
+      "operator": "Rajesh Patel",
+      "shift": "Day Shift (6:00 AM - 2:00 PM)",
+      "job": "Medical Device Housings",
+      "currentMold": "MED-005 (4-cavity) - Under Maintenance",
+      "material": "PC/ABS Blend - Medical Grade",
+      "runningDuration": "0h 0m",
+      "realtimeData": {
+        "outputRate": 0,
+        "targetRate": 180,
+        "efficiency": 0,
+        "quality": "Machine under maintenance",
+        "cycleTime": 0,
+        "targetCycleTime": 80,
+        "injectionPressure": 0,
+        "moldTemperature": 25,
+        "materialTemperature": 25,
+        "cavityCount": 4,
+        "shotWeight": 85,
+        "nextMaintenance": "In progress - Screw replacement"
+      },
+      "dailyProduction": [
+        { "hour": "06:00", "actual": 165, "target": 180, "cumulative": 165, "cycleTime": 82 },
+        { "hour": "07:00", "actual": 172, "target": 180, "cumulative": 337, "cycleTime": 79 },
+        { "hour": "08:00", "actual": 0, "target": 180, "cumulative": 337, "cycleTime": 0 },
+        { "hour": "09:00", "actual": 0, "target": 180, "cumulative": 337, "cycleTime": 0 },
+        { "hour": "10:00", "actual": 0, "target": 180, "cumulative": 337, "cycleTime": 0 },
+        { "hour": "11:00", "actual": 0, "target": 180, "cumulative": 337, "cycleTime": 0 },
+        { "hour": "12:00", "actual": 0, "target": 180, "cumulative": 337, "cycleTime": 0 },
+        { "hour": "13:00", "actual": 0, "target": 180, "cumulative": 337, "cycleTime": 0 },
+        { "hour": "14:00", "actual": 0, "target": 180, "cumulative": 337, "cycleTime": 0 }
+      ],
+      "oeeData": {
+        "current": {
+          "overall": 38.2,
+          "availability": 41.7,
+          "performance": 95.6,
+          "quality": 98.9,
+          "targetOEE": 85.0
+        },
+        "trend": [
+          { "date": "2024-01-15", "oee": 86.4, "availability": 89.8, "performance": 95.2, "quality": 98.7 },
+          { "date": "2024-01-16", "oee": 88.1, "availability": 91.2, "performance": 96.1, "quality": 99.1 },
+          { "date": "2024-01-17", "oee": 84.9, "availability": 88.5, "performance": 94.8, "quality": 98.5 },
+          { "date": "2024-01-18", "oee": 79.3, "availability": 83.1, "performance": 94.2, "quality": 98.8 },
+          { "date": "2024-01-19", "oee": 38.2, "availability": 41.7, "performance": 95.6, "quality": 98.9 }
+        ],
+        "shiftComparison": [
+          { "shift": "Day (6AM-2PM)", "oee": 86.1, "availability": 89.5, "performance": 95.8, "quality": 98.9 },
+          { "shift": "Evening (2PM-10PM)", "oee": 83.7, "availability": 87.2, "performance": 94.9, "quality": 98.6 },
+          { "shift": "Night (10PM-6AM)", "oee": 81.2, "availability": 84.8, "performance": 94.1, "quality": 98.3 }
+        ]
+      },
+      "downtimeData": {
+        "todayBreakdown": [
+          { "cause": "Scheduled Maintenance", "duration": 420, "percentage": 78.4, "color": "#4ecdc4" },
+          { "cause": "Screw Replacement", "duration": 85, "percentage": 15.9, "color": "#ff6b6b" },
+          { "cause": "Calibration", "duration": 30, "percentage": 5.6, "color": "#f39c12" }
+        ],
+        "weeklyTrend": [
+          { "day": "Mon", "planned": 35, "unplanned": 8, "maintenance": 12 },
+          { "day": "Tue", "planned": 40, "unplanned": 15, "maintenance": 5 },
+          { "day": "Wed", "planned": 32, "unplanned": 12, "maintenance": 8 },
+          { "day": "Thu", "planned": 38, "unplanned": 20, "maintenance": 10 },
+          { "day": "Fri", "planned": 30, "unplanned": 18, "maintenance": 7 },
+          { "day": "Sat", "planned": 25, "unplanned": 10, "maintenance": 15 },
+          { "day": "Today", "planned": 45, "unplanned": 0, "maintenance": 90 }
+        ]
+      },
+      "qualityData": {
+        "defectTypes": [
+          { "type": "Contamination", "count": 2, "percentage": 50, "cost": 800 },
+          { "type": "Dimension Out of Spec", "count": 2, "percentage": 50, "cost": 600 }
+        ]
+      }
+    },
+    {
+      "id": "IMM-003",
+      "name": "Injection Molding Machine 3 - Sumitomo SE180DU",
+      "type": "Injection Molding",
+      "location": "Production Floor B - Bay 1",
+      "status": "RUNNING",
+      "operator": "Anita Desai",
+      "shift": "Evening Shift (2:00 PM - 10:00 PM)",
+      "job": "Consumer Electronics Casings",
+      "currentMold": "ELEC-012 (12-cavity)",
+      "material": "PP Copolymer - Flame Retardant",
+      "runningDuration": "6h 15m",
+      "realtimeData": {
+        "outputRate": 432,
+        "targetRate": 480,
+        "efficiency": 90.0,
+        "quality": "All parts within tolerance",
+        "cycleTime": 30,
+        "targetCycleTime": 27,
+        "injectionPressure": 980,
+        "moldTemperature": 45,
+        "materialTemperature": 220,
+        "cavityCount": 12,
+        "shotWeight": 95,
+        "nextMaintenance": "Due in 3 days"
+      },
+      "dailyProduction": [
+        { "hour": "14:00", "actual": 420, "target": 480, "cumulative": 420, "cycleTime": 31 },
+        { "hour": "15:00", "actual": 445, "target": 480, "cumulative": 865, "cycleTime": 29 },
+        { "hour": "16:00", "actual": 465, "target": 480, "cumulative": 1330, "cycleTime": 28 },
+        { "hour": "17:00", "actual": 430, "target": 480, "cumulative": 1760, "cycleTime": 32 },
+        { "hour": "18:00", "actual": 450, "target": 480, "cumulative": 2210, "cycleTime": 29 },
+        { "hour": "19:00", "actual": 432, "target": 480, "cumulative": 2642, "cycleTime": 30 },
+        { "hour": "20:00", "actual": 425, "target": 480, "cumulative": 3067, "cycleTime": 31 },
+        { "hour": "21:00", "actual": 440, "target": 480, "cumulative": 3507, "cycleTime": 30 },
+        { "hour": "22:00", "actual": 432, "target": 480, "cumulative": 3939, "cycleTime": 30 }
+      ],
+      "oeeData": {
+        "current": {
+          "overall": 89.1,
+          "availability": 94.2,
+          "performance": 90.0,
+          "quality": 99.2,
+          "targetOEE": 85.0
+        },
+        "trend": [
+          { "date": "2024-01-15", "oee": 87.3, "availability": 92.1, "performance": 89.8, "quality": 99.1 },
+          { "date": "2024-01-16", "oee": 88.7, "availability": 93.5, "performance": 90.2, "quality": 99.3 },
+          { "date": "2024-01-17", "oee": 90.2, "availability": 95.1, "performance": 90.8, "quality": 99.4 },
+          { "date": "2024-01-18", "oee": 88.9, "availability": 93.8, "performance": 90.1, "quality": 99.2 },
+          { "date": "2024-01-19", "oee": 89.1, "availability": 94.2, "performance": 90.0, "quality": 99.2 }
+        ],
+        "shiftComparison": [
+          { "shift": "Day (6AM-2PM)", "oee": 87.5, "availability": 92.8, "performance": 89.5, "quality": 99.1 },
+          { "shift": "Evening (2PM-10PM)", "oee": 89.1, "availability": 94.2, "performance": 90.0, "quality": 99.2 },
+          { "shift": "Night (10PM-6AM)", "oee": 85.3, "availability": 90.1, "performance": 88.7, "quality": 98.9 }
+        ]
+      },
+      "downtimeData": {
+        "todayBreakdown": [
+          { "cause": "Color Change", "duration": 25, "percentage": 52.1, "color": "#ff6b6b" },
+          { "cause": "Material Shortage", "duration": 15, "percentage": 31.3, "color": "#4ecdc4" },
+          { "cause": "Operator Break", "duration": 8, "percentage": 16.7, "color": "#45b7d1" }
+        ],
+        "weeklyTrend": [
+          { "day": "Mon", "planned": 30, "unplanned": 12, "maintenance": 5 },
+          { "day": "Tue", "planned": 25, "unplanned": 18, "maintenance": 8 },
+          { "day": "Wed", "planned": 35, "unplanned": 10, "maintenance": 3 },
+          { "day": "Thu", "planned": 28, "unplanned": 15, "maintenance": 7 },
+          { "day": "Fri", "planned": 32, "unplanned": 20, "maintenance": 5 },
+          { "day": "Sat", "planned": 20, "unplanned": 8, "maintenance": 12 },
+          { "day": "Today", "planned": 30, "unplanned": 18, "maintenance": 0 }
+        ]
+      },
+      "qualityData": {
+        "defectTypes": [
+          { "type": "Gate Mark", "count": 8, "percentage": 44.4, "cost": 320 },
+          { "type": "Ejector Pin Mark", "count": 5, "percentage": 27.8, "cost": 200 },
+          { "type": "Weld Line", "count": 3, "percentage": 16.7, "cost": 180 },
+          { "type": "Burn Mark", "count": 2, "percentage": 11.1, "cost": 240 }
+        ]
+      }
+    },
+    {
+      "id": "IMM-004",
+      "name": "Injection Molding Machine 4 - Arburg Allrounder 520C",
+      "type": "Injection Molding",
+      "location": "Production Floor B - Bay 2",
+      "status": "IDLE",
+      "operator": "Vikram Singh",
+      "shift": "Night Shift (10:00 PM - 6:00 AM)",
+      "job": "Packaging Containers - Setup in Progress",
+      "currentMold": "PACK-008 (16-cavity) - Being Installed",
+      "material": "HDPE - Food Grade",
+      "runningDuration": "0h 0m",
+      "realtimeData": {
+        "outputRate": 0,
+        "targetRate": 640,
+        "efficiency": 0,
+        "quality": "Awaiting production start",
+        "cycleTime": 0,
+        "targetCycleTime": 22,
+        "injectionPressure": 0,
+        "moldTemperature": 25,
+        "materialTemperature": 25,
+        "cavityCount": 16,
+        "shotWeight": 110,
+        "nextMaintenance": "Due in 8 days"
+      },
+      "dailyProduction": [
+        { "hour": "22:00", "actual": 0, "target": 640, "cumulative": 0, "cycleTime": 0 },
+        { "hour": "23:00", "actual": 0, "target": 640, "cumulative": 0, "cycleTime": 0 },
+        { "hour": "00:00", "actual": 0, "target": 640, "cumulative": 0, "cycleTime": 0 },
+        { "hour": "01:00", "actual": 0, "target": 640, "cumulative": 0, "cycleTime": 0 },
+        { "hour": "02:00", "actual": 0, "target": 640, "cumulative": 0, "cycleTime": 0 },
+        { "hour": "03:00", "actual": 0, "target": 640, "cumulative": 0, "cycleTime": 0 },
+        { "hour": "04:00", "actual": 0, "target": 640, "cumulative": 0, "cycleTime": 0 },
+        { "hour": "05:00", "actual": 0, "target": 640, "cumulative": 0, "cycleTime": 0 },
+        { "hour": "06:00", "actual": 0, "target": 640, "cumulative": 0, "cycleTime": 0 }
+      ],
+      "oeeData": {
+        "current": {
+          "overall": 0.0,
+          "availability": 0.0,
+          "performance": 0.0,
+          "quality": 100.0,
+          "targetOEE": 85.0
+        },
+        "trend": [
+          { "date": "2024-01-15", "oee": 83.7, "availability": 87.2, "performance": 91.8, "quality": 98.7 },
+          { "date": "2024-01-16", "oee": 85.1, "availability": 89.1, "performance": 92.3, "quality": 98.9 },
+          { "date": "2024-01-17", "oee": 81.9, "availability": 85.8, "performance": 90.7, "quality": 98.4 },
+          { "date": "2024-01-18", "oee": 78.5, "availability": 82.3, "performance": 89.9, "quality": 98.1 },
+          { "date": "2024-01-19", "oee": 0.0, "availability": 0.0, "performance": 0.0, "quality": 100.0 }
+        ],
+        "shiftComparison": [
+          { "shift": "Day (6AM-2PM)", "oee": 84.2, "availability": 88.5, "performance": 91.8, "quality": 98.7 },
+          { "shift": "Evening (2PM-10PM)", "oee": 82.1, "availability": 86.3, "performance": 90.9, "quality": 98.5 },
+          { "shift": "Night (10PM-6AM)", "oee": 79.8, "availability": 83.7, "performance": 89.2, "quality": 98.2 }
+        ]
+      },
+      "downtimeData": {
+        "todayBreakdown": [
+          { "cause": "Mold Installation", "duration": 180, "percentage": 62.5, "color": "#ff6b6b" },
+          { "cause": "Process Setup", "duration": 75, "percentage": 26.0, "color": "#4ecdc4" },
+          { "cause": "Material Preparation", "duration": 33, "percentage": 11.5, "color": "#45b7d1" }
+        ],
+        "weeklyTrend": [
+          { "day": "Mon", "planned": 40, "unplanned": 25, "maintenance": 10 },
+          { "day": "Tue", "planned": 35, "unplanned": 30, "maintenance": 8 },
+          { "day": "Wed", "planned": 45, "unplanned": 20, "maintenance": 12 },
+          { "day": "Thu", "planned": 38, "unplanned": 28, "maintenance": 5 },
+          { "day": "Fri", "planned": 42, "unplanned": 22, "maintenance": 15 },
+          { "day": "Sat", "planned": 30, "unplanned": 15, "maintenance": 20 },
+          { "day": "Today", "planned": 60, "unplanned": 0, "maintenance": 0 }
+        ]
+      },
+      "qualityData": {
+        "defectTypes": [
+          { "type": "No Production Today", "count": 0, "percentage": 0, "cost": 0 }
+        ]
+      }
+    },
+    {
+      "id": "IMM-005",
+      "name": "Injection Molding Machine 5 - Milacron Magna 440",
+      "type": "Injection Molding",
+      "location": "Production Floor C - Bay 1",
+      "status": "RUNNING",
+      "operator": "Deepak Kumar",
+      "shift": "Day Shift (6:00 AM - 2:00 PM)",
+      "job": "Automotive Interior Parts",
+      "currentMold": "AUTO-025 (6-cavity)",
+      "material": "TPO - Automotive Grade",
+      "runningDuration": "7h 45m",
+      "realtimeData": {
+        "outputRate": 216,
+        "targetRate": 240,
+        "efficiency": 90.0,
+        "quality": "1 warpage defect detected",
+        "cycleTime": 60,
+        "targetCycleTime": 54,
+        "injectionPressure": 1450,
+        "moldTemperature": 75,
+        "materialTemperature": 260,
+        "cavityCount": 6,
+        "shotWeight": 180,
+        "nextMaintenance": "Due in 1 day"
+      },
+      "dailyProduction": [
+        { "hour": "06:00", "actual": 200, "target": 240, "cumulative": 200, "cycleTime": 65 },
+        { "hour": "07:00", "actual": 210, "target": 240, "cumulative": 410, "cycleTime": 62 },
+        { "hour": "08:00", "actual": 225, "target": 240, "cumulative": 635, "cycleTime": 58 },
+        { "hour": "09:00", "actual": 220, "target": 240, "cumulative": 855, "cycleTime": 59 },
+        { "hour": "10:00", "actual": 215, "target": 240, "cumulative": 1070, "cycleTime": 61 },
+        { "hour": "11:00", "actual": 218, "target": 240, "cumulative": 1288, "cycleTime": 60 },
+        { "hour": "12:00", "actual": 212, "target": 240, "cumulative": 1500, "cycleTime": 62 },
+        { "hour": "13:00", "actual": 222, "target": 240, "cumulative": 1722, "cycleTime": 59 },
+        { "hour": "14:00", "actual": 216, "target": 240, "cumulative": 1938, "cycleTime": 60 }
+      ],
+      "oeeData": {
+        "current": {
+          "overall": 79.8,
+          "availability": 88.7,
+          "performance": 90.0,
+          "quality": 96.2,
+          "targetOEE": 85.0
+        },
+        "trend": [
+          { "date": "2024-01-15", "oee": 76.2, "availability": 85.1, "performance": 88.5, "quality": 95.8 },
+          { "date": "2024-01-16", "oee": 78.1, "availability": 87.2, "performance": 89.1, "quality": 96.1 },
+          { "date": "2024-01-17", "oee": 80.5, "availability": 89.8, "performance": 90.3, "quality": 96.5 },
+          { "date": "2024-01-18", "oee": 77.9, "availability": 86.5, "performance": 88.9, "quality": 95.9 },
+          { "date": "2024-01-19", "oee": 79.8, "availability": 88.7, "performance": 90.0, "quality": 96.2 }
+        ],
+        "shiftComparison": [
+          { "shift": "Day (6AM-2PM)", "oee": 79.8, "availability": 88.7, "performance": 90.0, "quality": 96.2 },
+          { "shift": "Evening (2PM-10PM)", "oee": 76.5, "availability": 85.2, "performance": 88.7, "quality": 95.8 },
+          { "shift": "Night (10PM-6AM)", "oee": 73.1, "availability": 81.8, "performance": 87.2, "quality": 95.3 }
+        ]
+      },
+      "downtimeData": {
+        "todayBreakdown": [
+          { "cause": "Cycle Time Optimization", "duration": 45, "percentage": 41.7, "color": "#ff6b6b" },
+          { "cause": "Temperature Adjustment", "duration": 28, "percentage": 25.9, "color": "#4ecdc4" },
+          { "cause": "Quality Inspection", "duration": 20, "percentage": 18.5, "color": "#45b7d1" },
+          { "cause": "Material Drying", "duration": 15, "percentage": 13.9, "color": "#f39c12" }
+        ],
+        "weeklyTrend": [
+          { "day": "Mon", "planned": 50, "unplanned": 20, "maintenance": 15 },
+          { "day": "Tue", "planned": 45, "unplanned": 25, "maintenance": 10 },
+          { "day": "Wed", "planned": 48, "unplanned": 18, "maintenance": 12 },
+          { "day": "Thu", "planned": 42, "unplanned": 30, "maintenance": 8 },
+          { "day": "Fri", "planned": 40, "unplanned": 22, "maintenance": 18 },
+          { "day": "Sat", "planned": 35, "unplanned": 15, "maintenance": 25 },
+          { "day": "Today", "planned": 48, "unplanned": 20, "maintenance": 0 }
+        ]
+      },
+      "qualityData": {
+        "defectTypes": [
+          { "type": "Warpage", "count": 15, "percentage": 38.5, "cost": 2250 },
+          { "type": "Surface Defect", "count": 12, "percentage": 30.8, "cost": 1440 },
+          { "type": "Dimensional Variation", "count": 8, "percentage": 20.5, "cost": 1200 },
+          { "type": "Color Streak", "count": 4, "percentage": 10.3, "cost": 320 }
+        ]
+      }
+    }
+  ],
+  "searchKeywords": {
+    "status": ["running", "idle", "maintenance", "stopped", "operational", "down"],
+    "oee": ["overall equipment effectiveness", "efficiency", "performance", "availability", "quality"],
+    "production": ["output", "rate", "cycle time", "parts per hour", "throughput", "capacity"],
+    "quality": ["defects", "scrap", "rework", "first pass yield", "rejection", "inspection"],
+    "maintenance": ["preventive", "breakdown", "repair", "service", "calibration", "replacement"],
+    "downtime": ["unplanned", "planned", "changeover", "setup", "cleaning", "break"],
+    "operators": ["shift", "performance", "efficiency", "training", "experience", "productivity"],
+    "materials": ["plastic", "resin", "abs", "pp", "pe", "pc", "tpo", "hdpe"],
+    "molds": ["cavity", "tooling", "injection", "gate", "runner", "cooling", "ejection"],
+    "process": ["temperature", "pressure", "injection", "cooling", "cycle", "shot weight"],
+    "defects": ["flash", "short shot", "sink marks", "warpage", "burn marks", "weld lines"],
+    "machines": ["injection molding", "imm", "haitian", "engel", "sumitomo", "arburg", "milacron"]
+  }
+} 
